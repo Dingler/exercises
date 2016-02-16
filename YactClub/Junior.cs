@@ -15,9 +15,9 @@ namespace YactClub
             this.parentsName = parentsName;
         }
    
-        public override double getFee()
+        public override double GetFee()
         {
-            return base.getFee()/2;
+            return base.GetFee()/2;
         }
 
         public string ParentsName

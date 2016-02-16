@@ -28,12 +28,12 @@ namespace YactClub
             }
         }
 
-        public void addMember(Member m)
+        public void AddMember(Member m)
         {
             members.Add(m);
         }
 
-        public Member findMember(string name)
+        public Member FindMember(string name)
         {
             foreach (Member m in members)
             {
@@ -45,17 +45,17 @@ namespace YactClub
             return null;
         }
 
-        public void deleteMember(string name)
+        public void DeleteMember(string name)
         {
-            members.Remove(findMember(name));
+            members.Remove(FindMember(name));
         }
 
-        public double getTotalFee()
+        public double GetTotalFee()
         {
             double total = 0;
             foreach (Member m in members)
             {
-                total = total + m.getFee();
+                total = total + m.GetFee();
             }
             return total;
         }

@@ -8,27 +8,21 @@ namespace YactClub
 {
     class Volunteer : Member
     {
-        private int hours;
-
         public Volunteer(string name, string address, int age, double fee, int hours) : base(name, address, age, fee)
         {
-            this.hours = hours;
+            this.Hours = hours;
         }
 
-        public override double getFee()
+        public override double GetFee()
         {
-            if (hours >= 100)
+            if (Hours >= 100)
             {
-                return base.getFee() - base.getFee();
+                return base.GetFee() - base.GetFee();
             }
-            return base.getFee() * 0.75;
+            return base.GetFee() * 0.75;
 
         }
 
-        public int Hours
-        {
-            get { return hours; }
-            set { hours = value; }
-        }
+        public int Hours { get; set; }
     }
 }

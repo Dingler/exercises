@@ -24,25 +24,25 @@ namespace YactClub
             Junior j2 = new Junior("Mads", "Markvej 1", 12, 500, "Far");
             Junior j3 = new Junior("Mikael", "Hansgade 88", 18, 500, "Bedste");
 
-            members.addMember(m1);
-            members.addMember(m2);
-            members.addMember(m3);
+            members.AddMember(m1);
+            members.AddMember(m2);
+            members.AddMember(m3);
 
-            members.addMember(v1);
-            Console.WriteLine(v1.getFee());
-            members.addMember(v2);
-            Console.WriteLine(v2.getFee());
-            members.addMember(v3);
-            Console.WriteLine(v3.getFee());
+            members.AddMember(v1);
+            Console.WriteLine(v1.GetFee());
+            members.AddMember(v2);
+            Console.WriteLine(v2.GetFee());
+            members.AddMember(v3);
+            Console.WriteLine(v3.GetFee());
 
-            members.addMember(j1);
-            Console.WriteLine(j1.getFee());
-            members.addMember(j2);
-            Console.WriteLine(j2.getFee());
-            members.addMember(j3);
-            Console.WriteLine(j3.getFee());
+            members.AddMember(j1);
+            Console.WriteLine(j1.GetFee());
+            members.AddMember(j2);
+            Console.WriteLine(j2.GetFee());
+            members.AddMember(j3);
+            Console.WriteLine(j3.GetFee());
 
-            Console.WriteLine("Total: " + members.getTotalFee());
+            Console.WriteLine("Total: " + members.GetTotalFee());
             Console.ReadLine();
         }
     }

@@ -21,7 +21,7 @@ namespace YactClub
             this.fee = fee;
         }
 
-        public virtual double getFee()
+        public virtual double GetFee()
         {
             return fee;
         }
