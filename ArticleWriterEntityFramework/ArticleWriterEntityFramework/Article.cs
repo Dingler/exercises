@@ -8,6 +8,7 @@ namespace ArticleWriterEntityFramework
 {
     public class Article
     {
+        public int ArticleId { get; set; }
         public string Headline { get; set; }
         public string Text { get; set; }
         public int? WriterId { get; set; }
