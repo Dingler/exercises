@@ -18,11 +18,9 @@ namespace ArticleWriterEntityFramework.Migrations
                 new Writer { Name = "Andreas Blom Oredsen" },
                 new Writer { Name = "Heine Kristen" });
 
+            context.Writers.FirstOrDefault().Articles.Add(new Article { Headline= "Ost", Text="Ost er godt" });
             context.Articles.AddOrUpdate(a => a.Headline,
-                new Article { Headline = "My First Article!" });
-
-            context.Writers.AddOrUpdate(w => w.Name, new Writer { Name = "Claus Lortepik" }.Articles.Add(new Article { Headline = "This is serious!", Text = "Oh my!" }));
-            
+                new Article { Headline = "My First Article!" });           
 
             context.Writers.First().Articles.Add(context.Articles.First());
 

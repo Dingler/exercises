@@ -11,10 +11,10 @@ namespace ArticleWriterEntityFramework
     {
         public DBContext() : base("Name=AZUREDB")
         {
-                
+
         }
 
-        public DbSet<Writer> Writers{ get; set; }
+        public DbSet<Writer> Writers { get; set; }
         public DbSet<Article> Articles { get; set; }
 
     }

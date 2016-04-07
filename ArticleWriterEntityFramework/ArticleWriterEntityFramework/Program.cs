@@ -10,6 +10,8 @@ namespace ArticleWriterEntityFramework
     {
         static void Main(string[] args)
         {
+            DBContext db = new DBContext();
+            Console.WriteLine(db.Writers.First().Name);
         }
     }
 }
